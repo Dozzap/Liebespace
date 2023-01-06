@@ -1,0 +1,35 @@
+body{
+    background-color: #252525;
+    color: #fff;
+}
+
+h1{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 100px;
+    
+}
+
+.about_Me{
+    container:overflow;
+    border: 1px solid #fff;
+}
+
+.text_am{
+    
+    padding-left: 50px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    overflow:auto;
+
+}
+
+.img1{
+    padding-top: 50px;
+    float: left;
+    margin-right: 20px;
+
+}
