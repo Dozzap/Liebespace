@@ -1,19 +1,41 @@
 body{
     background-color: #252525;
     color: #fff;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
+a{
+    text-align: center;
+}
 h1{
     color: #fff;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 100px;
     
+    
+}
+.landingpage{
+
+
 }
 
+.landingpage.show {
+    opacity: 1;
+  }
+
 .about_Me{
+    
     container:overflow;
     border: 1px solid #fff;
+    opacity: 0;
+    
+    transition: opacity 2s;
+}
+
+.about_Me.show{
+    opacity: 1;
 }
 
 .text_am{
@@ -24,11 +46,10 @@ h1{
     text-align: center;
     font-size: 50px;
     overflow:auto;
-
 }
 
 .img1{
-    padding-top: 50px;
+    padding-top: 40px;
     float: left;
     margin-right: 20px;
 
