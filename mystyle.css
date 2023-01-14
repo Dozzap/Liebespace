@@ -1,56 +1,110 @@
 body{
     background-color: #252525;
     color: #fff;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-a{
-    text-align: center;
-}
-h1{
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 100px;
-    
-    
-}
-.landingpage{
-
+    padding-left: 10vh;
+    padding-right: 10vh;
 
 }
 
-.landingpage.show {
-    opacity: 1;
+.no-scroll {
+    overflow: hidden;
   }
 
-.about_Me{
-    
-    container:overflow;
-    border: 1px solid #fff;
-    opacity: 0;
-    
-    transition: opacity 2s;
-}
+.landingpage{
 
-.about_Me.show{
-    opacity: 1;
-}
-
-.text_am{
-    
-    padding-left: 50px;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 50px;
-    overflow:auto;
+    margin-top: 45vh;
+    margin-bottom: 45vh;
+    border: 10px solid #fff;
+        position: 3em;
+        opacity: 0;
+        animation: appear 0.5s ease forwards;
+        font-size: 15vh;
+        font-family: 'Roboto', sans-serif;
 }
 
-.img1{
-    padding-top: 40px;
-    float: left;
-    margin-right: 20px;
-
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
 }
+.landingpage .text {
+    opacity: 0;
+    animation: appear 0.5s ease forwards;
+}
+.text:nth-child(1) {
+    animation-delay:0s;
+}
+.text:nth-child(2) {
+    animation-delay:0.3s;
+}
+.text:nth-child(3) {
+    animation-delay:0.5s;
+}
+.text:nth-child(4) {
+    animation-delay:0.3s;
+}
+.text:nth-child(5) {
+    animation-delay:0.4s;
+}
+.text:nth-child(6) {
+    animation-delay:0s;
+}
+.text:nth-child(7) {
+    animation-delay:0.3s;
+}
+.text:nth-child(8) {
+    animation-delay:0.5s;
+}
+.text:nth-child(9) {
+    animation-delay:0.3s;
+}
+.text:nth-child(10) {
+    animation-delay:0.4s;
+}
+.text:nth-child(11) {
+    font-size: 10px;
+    animation-delay:0.4s;
+}
+
+.nav-button{
+    color: #e1e1e1;
+    font-size: 0.2em;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+button:focus,
+button:hover {
+  color: #fff;
+}
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+
+
+
+

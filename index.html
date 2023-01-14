@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +9,65 @@
     <link rel="stylesheet" href="mystyle.css">
     <title>Liebespace</title>
 </head>
-<body>
-    <div id= "landingpage" class = "landingpage">
-        <h1>Deb's Den</h1>
-        <a>“I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it.”
-            ― Bill Gates</a>
+
+<body class="no-scroll">
+    <div id="landingpage" class="landingpage">
+        <span class="text">L</span>
+        <span class="text">I</span>
+        <span class="text">E</span>
+        <span class="text">B</span>
+        <span class="text">E</span>
+        <span class="text">S</span>
+        <span class="text">P</span>
+        <span class="text">A</span>
+        <span class="text">C</span>
+        <span class="text">E</span>
     </div>
 
-    <div id="short_cuts" class = "sc_containers">
-        <div id= "about_Me-id" class = "about_Me">
-            <a href="https://www.uwo.ca/" target = "_blank">
-                <img src="img1-removebg-preview.png" alt="Deb" class="img1"></a>
-            <div class = "text_am">
-            <h2>About Me</h2>
-            
-            <p>My name is Deb and I am a 2nd year student at University of Western Ontario. I am currently studying Computer Science and I am interested in the field of Software Engineering. I am also
+
+    <div id="navigation-buttons" class="navigation-buttons">
+        <button class="nav-button" onclick="scrollToAboutMe()">About Me</button>
+        <button class="nav-button" onclick="scrollToThingsIDo()">Things I Do</button>
+        <button class="nav-button" onclick="scrollToProjects()">Projects</button>
+        <button class="nav-button" onclick="scrollToContactMe()">Contact Me</button>
+    </div>
+
+
+
+
+
+    <div id="short_cuts" class="sc_containers">
+        <div class="text_am">
+            <h5>About Me</h5>
+            <p>My name is Deb and I am a 2nd year student at University of Western Ontario. I am currently studying
+                Computer Science and I am interested in the field of Software Engineering. I am also
         </div>
     </div>
 
-    <div class= "TiD">
-        Things I did
-        
-    </div>
-    <p>My name is Deb and I am a 2nd year student at University of Western Ontario. I am currently studying Computer Science and I am interested in the field of Software Engineering. I am also</p>
-    <div class="TTD">
-        This I do
+    <div id="thingsIDo" class="thingsIDo">
+        <h3>Things I Do</h3>
+        <p>Here are some of the things I do</p>
+        <ul>
+            <li>Play video games</li>
+            <li>Watch anime</li>
+            <li>Read manga</li>
+            <li>Listen to music</li>
+            <li>Watch youtube videos</li>
+            <li>Sleep</li>
     </div>
 
-    
+    <div id="thingsToDo" class="TTD">
+        <h3> Project in progress </h3>
+        <ul>
+            <li>Weather App</li>
+            <li>Youtube video summarizer</li>
+        </ul>
+    </div>
+
+    <div class="contact" id="contact">
+        <input type="email" placeholder="Send your email here">
+
+    </div>
 </body>
+
 </html>
